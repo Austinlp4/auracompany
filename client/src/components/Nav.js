@@ -36,7 +36,6 @@ const Bar = styled.div`
     width: 100%;
     height: 70px;
     background: black;
-    opacity: .6;
     position: fixed;
     top: 0;
     img{
@@ -47,6 +46,7 @@ const Bar = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
+    z-index: 5;
 `;
 
 const Links = styled.div`
@@ -55,9 +55,18 @@ const Links = styled.div`
     justify-content: space-between;
     margin-right: 200px;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
     a{
         text-decoration: none;
         color: white;
+    }
+    a:nth-child(5){
+        border: 1px solid white;
+        padding: 4px;
+        &:hover{
+            background: white;
+            color: rgb(0,0,0);
+        }
     }
 `;
 
