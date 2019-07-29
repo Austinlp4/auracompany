@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 function Nav(){
     return(
         <Bar>
+            <Cont>
             <Logo>
                 <img src={logo} alt=""/> 
                 <h3>AURA</h3>
@@ -17,9 +18,16 @@ function Nav(){
                 <NavLink>PORTFOLIO</NavLink>
                 <NavLink>CONTACT</NavLink>
             </Links>
+            </Cont>
         </Bar>
     )
 }
+
+const Cont = styled.div`
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+`;
 
 const Logo = styled.div`
     color: white;
@@ -43,17 +51,16 @@ const Bar = styled.div`
         width: 60px;
     }
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 100px;
     z-index: 5;
+    opacity: .8;
 `;
 
 const Links = styled.div`
     width: 500px;
     display: flex;
     justify-content: space-between;
-    margin-right: 200px;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     a{

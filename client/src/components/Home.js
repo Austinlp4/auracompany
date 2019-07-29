@@ -39,6 +39,7 @@ function Home(){
                         </Bullet>
                     </CircleCont>
                 </HeroCont>
+                <Learn>Learn More &#8594;</Learn>
             </Hero>
             <Conttwo>
 
@@ -59,7 +60,8 @@ const Bullet = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     span{
-        color: blue;
+        color: lightblue;
+        font-wieght: bold;
     }
     align-items: center;
 `;
@@ -69,8 +71,6 @@ const CircleCont = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    background: black;
-    opacity: .6;
 `;
 
 const HeroCont = styled.div`
@@ -101,13 +101,13 @@ const Hero = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 `;
 
 const Cta = styled.div`
     font-family: 'Roboto', sans-serif;
     color: white;
     line-height: .8;
-    background: rgba(0,0,0, .8); 
     padding: 40px; 
     h1, span{
         font-size: 5rem;
@@ -115,8 +115,22 @@ const Cta = styled.div`
     }
     span{
         color: lightblue;
+        font-weight: bold;
     }
     
+`;
+
+const Learn = styled.button`
+    height: 75px;
+    width: 250px;
+    color: rgb(37, 104, 137);
+    background-color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 30%;
+    margin-top: 100px;
 `;
 
 export default Home;
