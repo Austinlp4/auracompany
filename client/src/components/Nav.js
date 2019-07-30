@@ -27,6 +27,9 @@ const Cont = styled.div`
     width: 60%;
     display: flex;
     justify-content: space-between;
+    @media(max-width: 1300px){
+        width: 80%;
+    }
 `;
 
 const Logo = styled.div`
@@ -53,7 +56,7 @@ const Bar = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
+    z-index: 90;
     opacity: .8;
 `;
 

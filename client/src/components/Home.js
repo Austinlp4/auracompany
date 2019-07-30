@@ -11,6 +11,7 @@ function Home(){
                         <h1>Bringing Your </h1>
                         <h1>Ideas To </h1> 
                         <span>Life</span>
+                        <Learn>Contact Us &#8594;</Learn>
                     </Cta>
                     <CircleCont>
                         <Bullet>
@@ -39,14 +40,62 @@ function Home(){
                         </Bullet>
                     </CircleCont>
                 </HeroCont>
-                <Learn>Learn More &#8594;</Learn>
+                
             </Hero>
             <Conttwo>
+                <Contenttwo>
+                    <h2>
+                        Web Design & <span>Development</span>
+                    </h2>
+                    <h3><span>THIS IS A TEST</span></h3>
+                    <p>
+                        Our team is dedicated on bringing you the best experience we know how.
+                        We start our process with deep user testing and analyzing the target market.
+                        We work side by side with you throughout the entire process, honing in on all or 
+                        your needs and wants. 
+                    </p>
+                    <p>
+                        After we have agreed on a suitable prototype, our development team works around the 
+                        clock to gauruntee that your website or app works the way you need it to. We test all 
+                        of the projects that we work on with thorough testing. 
 
+
+                    </p>
+                </Contenttwo>
             </Conttwo>
         </div>
     )
 }
+
+const Contenttwo = styled.div`
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    h2{
+        font-size: 3rem;
+        span{
+            color: rgb(40, 146, 199);
+        }
+    }
+    h3 {
+        width: 60%; 
+        text-align: center; 
+        border-bottom: 1px solid #000; 
+        line-height: 0.1em;
+        margin: 10px 0 20px; 
+        span{
+            background:#fff; 
+            padding:0 10px; 
+        }
+     } 
+     p{
+         width: 60%;
+         margin-bottom: 30px;
+         font-weight: bold;
+         line-height: 26pt;
+     }
+`;
 
 const Conttwo = styled.div`
     height: 420px;
@@ -60,7 +109,7 @@ const Bullet = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     span{
-        color: lightblue;
+        color: white;
         font-wieght: bold;
     }
     align-items: center;
@@ -71,6 +120,7 @@ const CircleCont = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    padding-top: 100px;
 `;
 
 const HeroCont = styled.div`
@@ -93,6 +143,13 @@ const Circle = styled.div`
     justify-content: center;
     align-items: center;
     margin-right: 15px;
+    @media(max-width: 1300px){
+        width: 40px;
+        height: 40px;
+        font-size: .9rem;
+        border: 2px solid white;
+    }
+    
 `;
 
 const Hero = styled.div`
@@ -109,15 +166,26 @@ const Cta = styled.div`
     color: white;
     line-height: .8;
     padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 160px;
     h1, span{
         font-size: 5rem;
         font-weight: lighter;
+        margin: 0;
+        margin-bottom: 40px;
     }
     span{
         color: lightblue;
         font-weight: bold;
     }
-    
+    @media(max-width: 1300px){
+        padding-top: 160px;
+        h1,span{
+            font-size: 3rem;
+        }
+    }
 `;
 
 const Learn = styled.button`
@@ -129,8 +197,13 @@ const Learn = styled.button`
     font-size: 1.2rem;
     cursor: pointer;
     align-self: flex-end;
-    margin-right: 30%;
-    margin-top: 100px;
+    @media(max-width: 1300px){
+        height: 50px;
+        width: 175px;
+        font-size: 1rem;
+        align-self: flex-start;
+        margin-right: 0;
+    }
 `;
 
 export default Home;
