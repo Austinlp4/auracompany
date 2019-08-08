@@ -16,7 +16,7 @@ function Nav(){
                 <NavLink>EXPERTISE</NavLink>
                 <NavLink>SERVICES</NavLink>
                 <NavLink>PORTFOLIO</NavLink>
-                <NavLink>CONTACT</NavLink>
+                <NavLink to='/contact'>CONTACT</NavLink>
             </Links>
             </Cont>
         </Bar>
