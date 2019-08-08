@@ -1,6 +1,11 @@
 import React from 'react';
 import background from '../images/backdrop-aura.png';
 import styled from 'styled-components';
+import computer from '../images/computer.png';
+import phone from '../images/phone.png';
+import design from '../images/design.png';
+import globe from '../images/globe.png';
+import ParticleEffectButton from 'react-particle-effect-button';
 
 function Home(){
     return(
@@ -47,7 +52,7 @@ function Home(){
                     <h2>
                         Web Design & <span>Development</span>
                     </h2>
-                    <h3><span>THIS IS A TEST</span></h3>
+                    <hr></hr><span><img src={computer} alt=""/></span><hr></hr>
                     <p>
                         Our team is dedicated on bringing you the best experience we know how.
                         We start our process with deep user testing and analyzing the target market.
@@ -63,9 +68,57 @@ function Home(){
                     </p>
                 </Contenttwo>
             </Conttwo>
+            <Contthree>
+                <h2>What we can do for you</h2>
+                <Services>
+                    <div><img src={design} alt=""/></div>
+                    <div><img src={globe} alt=""/></div>
+                    <div><img src={phone} alt=""/></div>
+                </Services>
+            </Contthree>
         </div>
     )
 }
+
+const Services = styled.div`
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: rgb(31, 98, 130);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 75px;
+            width: 75px;
+        }
+        box-shadow: 2px 2px 2px rgb(0, 0, 0, .5);
+        &:hover{
+            background: white;
+            cursor: pointer;
+        }
+    }
+`;
+
+const Contthree = styled.div`
+    height: 500px;
+    background: linear-gradient(to right, #166a81, #2FC9DF);
+    h2{
+        color: white;
+        font-size: 4rem;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 100px;
+    }
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+`;
 
 const Contenttwo = styled.div`
     display: flex;
@@ -77,6 +130,10 @@ const Contenttwo = styled.div`
         span{
             color: rgb(40, 146, 199);
         }
+    }
+    img{
+        height: 100px;
+        width: 100px;
     }
     h3 {
         width: 60%; 
@@ -90,15 +147,15 @@ const Contenttwo = styled.div`
         }
      } 
      p{
-         width: 60%;
+         width: 50%;
          margin-bottom: 30px;
          font-weight: bold;
          line-height: 26pt;
      }
+     padding-bottom: 50px;
 `;
 
 const Conttwo = styled.div`
-    height: 420px;
     background: white;
 `;
 
@@ -196,7 +253,7 @@ const Learn = styled.button`
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
-    align-self: flex-end;
+    align-self: flex-start;
     @media(max-width: 1300px){
         height: 50px;
         width: 175px;
