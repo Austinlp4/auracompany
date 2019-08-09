@@ -5,7 +5,7 @@ import computer from '../images/computer.png';
 import phone from '../images/phone.png';
 import design from '../images/design.png';
 import globe from '../images/globe.png';
-import ParticleEffectButton from 'react-particle-effect-button';
+
 
 function Home(){
     return(
