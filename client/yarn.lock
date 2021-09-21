@@ -6963,7 +6963,6 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
 
-<<<<<<< HEAD
 react-mail-form@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-mail-form/-/react-mail-form-1.0.3.tgz#aee073b14bc0f3fb3cdf76089e26a2c47818766c"
@@ -6971,7 +6970,7 @@ react-mail-form@^1.0.3:
   dependencies:
     prop-types "^15.6.1"
     react "^16.3.2"
-=======
+
 react-particle-effect-button@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-particle-effect-button/-/react-particle-effect-button-1.0.1.tgz#2fce601e4dfd4e27652b552a3a1ff2c07e39b8d4"
@@ -6979,7 +6978,6 @@ react-particle-effect-button@^1.0.1:
     animejs "^2.2.0"
     classnames "^2.2.5"
     raf "^3.4.0"
->>>>>>> origin/master
 
 react-router-dom@^5.0.1:
   version "5.0.1"
@@ -8124,8 +8122,9 @@ tmp@^0.0.33:
     os-tmpdir "~1.0.2"
 
 tmpl@1.0.x:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.4.tgz#23640dd7b42d00433911140820e5cf440e521dd1"
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
+  integrity sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
